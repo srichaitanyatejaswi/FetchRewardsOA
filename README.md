@@ -4,7 +4,7 @@ This Project calculates the similarity between two texts i.e., If two sentences 
 ## Procedure
 1. Ignored Puntuations
 2. converted into vectors
-3. Calculated Cosine Similarity
+3. Calculated Similarity with Two methods
 ### Implemented two methods to calculate cosine similarity:
 i) Occurences of words in the texts as vectors and Calculated Cosine Similarity
 ii) TF-IDF vectors and then Cosine Similarity
