@@ -19,11 +19,11 @@ ii) TF-IDF vectors and then Cosine Similarity
 1. Clone the github Repo"git clone https://github.com/srichaitanyatejaswi/FetchRewardsOA" and cd to that directory
 ##### Next step needs Docker to be installed on your system.
 2. In Terminal "docker build --tag textsimilarity ."
-3. docker run --publish 5000:5000 --detach --name ts textsimilarity
+3. Now paste "docker run --publish 5000:5000 --detach --name ts textsimilarity"
 4. Open Browser and go to localhost:5000
 5. Paste two sentences and Click Submit
 ##### To quit close the browser and press ctrl+c in terminal
 ##### To remove the container type in the terminal
 1. Type "docker ps -a" and You can see a container with name ts. 
-2. Copy the containerID and type "docker stop containerID"
+2. Copy the containerID and type "docker stop [containerID]"
 3. To remove the container "docker rm --force ts"
