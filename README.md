@@ -16,7 +16,7 @@ ii) TF-IDF vectors and then Cosine Similarity
 4. Dokcerized the Flask Application that can be built and run locally or pull from Dockerhub
 
 ## How to Run
-1. Clone the github Repo and cd to that directory
+1. Clone the github Repo"git clone https://github.com/srichaitanyatejaswi/FetchRewardsOA" and cd to that directory
 ##### Next step needs Docker to be installed on your system.
 2. In Terminal "docker build --tag textsimilarity ."
 3. docker run --publish 5000:5000 --detach --name ts textsimilarity
