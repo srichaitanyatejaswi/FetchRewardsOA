@@ -16,15 +16,14 @@ ii) TF-IDF vectors and then Cosine Similarity
 4. Dokcerized the Flask Application that can be built and run locally or pull from Dockerhub
 
 ## How to Run
-#### Method 1
 1. Clone the github Repo and cd to that directory
 ##### Next step needs Docker to be installed on your system.
-2. In Terminal "docker image build -t test"
-3. docker run -p 5000:5000 -d test
-4. copy URL from terminal and open it in the browser
+2. In Terminal "docker build --tag textsimilarity ."
+3. docker run --publish 5000:5000 --detach --name ts textsimilarity
+4. Open Browser and go to localhost:5000
 5. Paste two sentences and Click Submit
-#### Method 2
-1. Install Dockerhub on your PC and Sign In
-2. Run "docker pull chaitanya21/textsimilarity-app:latest" on terminal
-3. You can see a docker image on your DockerHub app and click run and click open in browser
-press ctrl+c in terminal to Quit
+##### To quit close the browser and press ctrl+c in terminal
+##### To remove the container type in the terminal
+1. Type "docker ps -a" and You can see a container with name ts. 
+2. Copy the containerID and type "docker stop containerID"
+3. To remove the container "docker rm --force ts"
